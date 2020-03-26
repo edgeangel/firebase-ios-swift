@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		50908ADA242CEB5C00D0F2F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50908AD8242CEB5C00D0F2F0 /* Main.storyboard */; };
 		50908ADC242CEB5E00D0F2F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50908ADB242CEB5E00D0F2F0 /* Assets.xcassets */; };
 		50908ADF242CEB5E00D0F2F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50908ADD242CEB5E00D0F2F0 /* LaunchScreen.storyboard */; };
-		50908AE7242CECFD00D0F2F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50908AE6242CECFD00D0F2F0 /* GoogleService-Info.plist */; };
+		50908AE9242CF0BE00D0F2F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50908AE8242CF0BE00D0F2F0 /* GoogleService-Info.plist */; };
 		EBF6A7B6937AE5D96EF2502C /* Pods_GoogleAnalyticsFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921E559EFF5861568AAC5B64 /* Pods_GoogleAnalyticsFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		50908ADB242CEB5E00D0F2F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50908ADE242CEB5E00D0F2F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50908AE0242CEB5E00D0F2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50908AE6242CECFD00D0F2F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		50908AE8242CF0BE00D0F2F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6849FB062840D3E54C9C310F /* Pods-GoogleAnalyticsFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAnalyticsFirebase.release.xcconfig"; path = "Target Support Files/Pods-GoogleAnalyticsFirebase/Pods-GoogleAnalyticsFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		921E559EFF5861568AAC5B64 /* Pods_GoogleAnalyticsFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAnalyticsFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,7 +72,7 @@
 				50908ADB242CEB5E00D0F2F0 /* Assets.xcassets */,
 				50908ADD242CEB5E00D0F2F0 /* LaunchScreen.storyboard */,
 				50908AE0242CEB5E00D0F2F0 /* Info.plist */,
-				50908AE6242CECFD00D0F2F0 /* GoogleService-Info.plist */,
+				50908AE8242CF0BE00D0F2F0 /* GoogleService-Info.plist */,
 			);
 			path = GoogleAnalyticsFirebase;
 			sourceTree = "<group>";
@@ -83,7 +83,6 @@
 				0A186DC5FD8A66324559BA7E /* Pods-GoogleAnalyticsFirebase.debug.xcconfig */,
 				6849FB062840D3E54C9C310F /* Pods-GoogleAnalyticsFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50908ADF242CEB5E00D0F2F0 /* LaunchScreen.storyboard in Resources */,
-				50908AE7242CECFD00D0F2F0 /* GoogleService-Info.plist in Resources */,
+				50908AE9242CF0BE00D0F2F0 /* GoogleService-Info.plist in Resources */,
 				50908ADC242CEB5E00D0F2F0 /* Assets.xcassets in Resources */,
 				50908ADA242CEB5C00D0F2F0 /* Main.storyboard in Resources */,
 			);

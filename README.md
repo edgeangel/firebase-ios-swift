@@ -8,7 +8,7 @@
 * Google Analytics for Firebase with Android Kotlin: https://github.com/edgeangel/firebase-android-kotlin
 
 ## More information and contribution
-hello@edgeangel.co
+💌 hello@edgeangel.co
 
 ## License
 The contents of this repository is licensed under the GPL-3.0 license. See [LICENSE](LICENSE) for more information.
