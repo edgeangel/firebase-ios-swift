@@ -13,9 +13,12 @@
 		50908ADA242CEB5C00D0F2F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50908AD8242CEB5C00D0F2F0 /* Main.storyboard */; };
 		50908ADC242CEB5E00D0F2F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50908ADB242CEB5E00D0F2F0 /* Assets.xcassets */; };
 		50908ADF242CEB5E00D0F2F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50908ADD242CEB5E00D0F2F0 /* LaunchScreen.storyboard */; };
+		50908AE7242CECFD00D0F2F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50908AE6242CECFD00D0F2F0 /* GoogleService-Info.plist */; };
+		EBF6A7B6937AE5D96EF2502C /* Pods_GoogleAnalyticsFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921E559EFF5861568AAC5B64 /* Pods_GoogleAnalyticsFirebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A186DC5FD8A66324559BA7E /* Pods-GoogleAnalyticsFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAnalyticsFirebase.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAnalyticsFirebase/Pods-GoogleAnalyticsFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		50908ACF242CEB5C00D0F2F0 /* GoogleAnalyticsFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAnalyticsFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50908AD2242CEB5C00D0F2F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50908AD4242CEB5C00D0F2F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		50908ADB242CEB5E00D0F2F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50908ADE242CEB5E00D0F2F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50908AE0242CEB5E00D0F2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50908AE6242CECFD00D0F2F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6849FB062840D3E54C9C310F /* Pods-GoogleAnalyticsFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAnalyticsFirebase.release.xcconfig"; path = "Target Support Files/Pods-GoogleAnalyticsFirebase/Pods-GoogleAnalyticsFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		921E559EFF5861568AAC5B64 /* Pods_GoogleAnalyticsFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAnalyticsFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF6A7B6937AE5D96EF2502C /* Pods_GoogleAnalyticsFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				50908AD1242CEB5C00D0F2F0 /* GoogleAnalyticsFirebase */,
 				50908AD0242CEB5C00D0F2F0 /* Products */,
+				94DB7A011AFE85894388B77A /* Pods */,
+				E2CCCE2B5CE1EA16739694B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,27 @@
 				50908ADB242CEB5E00D0F2F0 /* Assets.xcassets */,
 				50908ADD242CEB5E00D0F2F0 /* LaunchScreen.storyboard */,
 				50908AE0242CEB5E00D0F2F0 /* Info.plist */,
+				50908AE6242CECFD00D0F2F0 /* GoogleService-Info.plist */,
 			);
 			path = GoogleAnalyticsFirebase;
+			sourceTree = "<group>";
+		};
+		94DB7A011AFE85894388B77A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A186DC5FD8A66324559BA7E /* Pods-GoogleAnalyticsFirebase.debug.xcconfig */,
+				6849FB062840D3E54C9C310F /* Pods-GoogleAnalyticsFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2CCCE2B5CE1EA16739694B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				921E559EFF5861568AAC5B64 /* Pods_GoogleAnalyticsFirebase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50908AE3242CEB5E00D0F2F0 /* Build configuration list for PBXNativeTarget "GoogleAnalyticsFirebase" */;
 			buildPhases = (
+				F4FD6F7377E8EA8D4D584E8C /* [CP] Check Pods Manifest.lock */,
 				50908ACB242CEB5C00D0F2F0 /* Sources */,
 				50908ACC242CEB5C00D0F2F0 /* Frameworks */,
 				50908ACD242CEB5C00D0F2F0 /* Resources */,
+				299D52F4C712FC5E1B9B5F28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				50908ADF242CEB5E00D0F2F0 /* LaunchScreen.storyboard in Resources */,
+				50908AE7242CECFD00D0F2F0 /* GoogleService-Info.plist in Resources */,
 				50908ADC242CEB5E00D0F2F0 /* Assets.xcassets in Resources */,
 				50908ADA242CEB5C00D0F2F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299D52F4C712FC5E1B9B5F28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAnalyticsFirebase/Pods-GoogleAnalyticsFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAnalyticsFirebase/Pods-GoogleAnalyticsFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAnalyticsFirebase/Pods-GoogleAnalyticsFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FD6F7377E8EA8D4D584E8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAnalyticsFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50908ACB242CEB5C00D0F2F0 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		50908AE4242CEB5E00D0F2F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A186DC5FD8A66324559BA7E /* Pods-GoogleAnalyticsFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		50908AE5242CEB5E00D0F2F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6849FB062840D3E54C9C310F /* Pods-GoogleAnalyticsFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
