@@ -19,6 +19,7 @@
 import UIKit
 import WebKit
 import Firebase
+import FirebaseInstanceID
 
 class ViewController: UIViewController, WKScriptMessageHandler  {
     
@@ -54,8 +55,16 @@ class ViewController: UIViewController, WKScriptMessageHandler  {
         guard let value = body["value"] as? String else { return }
         Analytics.setUserProperty(value, forName: name)
       } else if command == "logEvent" {
-        guard let params = body["parameters"] as? [String: NSObject] else { return }
-        Analytics.logEvent(name, parameters: params)
+        guard var params = body["parameters"] as? [String: NSObject] else { return }
+        
+        // [START override params with app_instance_id]
+        InstanceID.instanceID().instanceID { (result, error) in
+            let app_instance_id = result!.instanceID as NSObject
+            let app_instance_id_array = ["app_instance_id": app_instance_id] as [String: NSObject]
+            params.merge(app_instance_id_array){(current, _) in current}
+            Analytics.logEvent(name, parameters: params)
+        }
+        // [END override params with app_instance_id]
       }
     }
 
